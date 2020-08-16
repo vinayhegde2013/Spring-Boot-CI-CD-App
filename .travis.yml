@@ -3,12 +3,7 @@ sudo: true
 jdk:
   -oraclejdk9
   
-script: mvn clean install
-
-jobs:
-  include:
-    - stage: Test
-      script: ./mvnw clean test
+script: ./mvnw clean install
 
 notification: 
   email: vinayhegde2013@gmail.com
